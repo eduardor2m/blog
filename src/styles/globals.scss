@@ -5,14 +5,11 @@
 }
 
 :root {
-  --grey100: #c6cad6;
-  --grey200: #a3a4bf;
-  --grey500: #7a83a0;
-  --grey600: #676d94;
-  --blue800: #3948be;
-  --blue400: #5193d5;
-  --purple500: #a94779;
-  --purple800: #483954;
+  --highlight: #ff57b2;
+  --heading: #f8f8f8;
+  --background: #1a1d23;
+  --info: #bbbbbb;
+  --body: #d7d7d7;
 }
 
 @media (max-width: 1080px) {
@@ -28,8 +25,8 @@
 }
 
 body {
-  background: var(--grey100);
-  color: var(--grey500);
+  background: var(--background);
+  color: var(--heading);
 }
 
 body,
