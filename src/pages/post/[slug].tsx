@@ -48,7 +48,7 @@ export default function Post({ post }: PostProps): JSX.Element {
   return (
     <>
       <Head>
-        <title>Posts | Spacetraveling</title>
+        <title>Posts | Blog</title>
       </Head>
       <main className={styles.container}>
         <div className={styles.content}>

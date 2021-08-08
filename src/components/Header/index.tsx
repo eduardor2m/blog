@@ -8,7 +8,14 @@ export function Header() {
     <header className={styles.container}>
       <div className={styles.content}>
         <Link href="/" passHref>
-          <Image src={logo} alt="Logo" />
+          <div className={styles.logo}>
+            <div className={styles.img}>
+                <Image src={logo} alt="Logo" layout="fill"/>
+            </div>
+            <div>
+              <p>Blog Do Programador</p>
+            </div>
+          </div>
         </Link>
       </div>
     </header>

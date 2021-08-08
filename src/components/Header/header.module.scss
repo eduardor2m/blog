@@ -13,3 +13,23 @@
   left: 23.125rem;
   cursor: pointer;
 }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.img {
+  height: 2.563rem;
+  position: relative;
+  width: 2.563rem;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
