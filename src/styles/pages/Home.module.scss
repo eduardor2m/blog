@@ -18,7 +18,7 @@
       line-height: 2, 125rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
-      transition: filter 0.2;
+      transition: filter 0.2s;
     }
 
     &:hover strong {
@@ -54,6 +54,7 @@
     font-weight: 600;
     font-size: 1.125rem;
     margin-top: 4rem;
+    margin-bottom: 4rem;
     transition: filter 0.2s;
     background: transparent;
     border: none;

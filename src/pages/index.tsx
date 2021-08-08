@@ -4,7 +4,7 @@ import React from 'react'
 import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import Prismic from '@prismicio/client';
-import styles from './Home.module.scss'
+import styles from '../styles/pages/Home.module.scss'
 import {FiCalendar, FiUser} from 'react-icons/fi'
 import { GetStaticProps } from 'next'
 import { getPrismicClient } from '../services/prismic';
@@ -41,22 +41,24 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
     const results = postsResponse.results.map(post => {
       return {
         uid: post.uid,
-        first_publication_date: format(
-          new Date(post.first_publication_date),
-          'dd MMM yyyy',
-          {
-            locale: ptBR,
-          }
-        ),
+        first_publication_date: post.first_publication_date,
+        // : format(
+        //   new Date(post.first_publication_date),
+        //   'dd MMM yyyy',
+        //   {
+        //     locale: ptBR,
+        //   }
+        // ),
         data: {
           title: post.data.title,
           subtitle: post.data.subtitle,
           author: post.data.author,
         },
       }
-      setPosts([...posts, ...results])
-      setNextPage(postsResponse.next_page)
+      
     })
+    setPosts([...posts, ...results])
+    setNextPage(postsResponse.next_page)
 
   }
   return (
